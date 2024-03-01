@@ -25,7 +25,7 @@
      <div class="magnifying-glass absolute w-8 h-8 border-2 border-gray-300 rounded-full adial
       bg-center pointer-events-none transition-transform duration-100"></div>
 
-      <header class="w-full bg-[#09101a] drop-shadow-2xl shadow-white text-white fixed top-0 z-50">
+      <header class=" w-screen sm:w-full bg-[#09101a] drop-shadow-2xl shadow-white text-white fixed top-0 z-50">
         <div class="flex items-center justify-center relative h-16 w-full shadow-2xl md:p-5">
             <div class="flex bg-[#141c27] h-16 items-center w-full md:w-[70%] justify-between pl-4 md:p-4 ">
                 <div class="">
@@ -187,10 +187,10 @@
     <!-- service section  start here -->
     <section id="services">
       <div class="mx-auto mb-5">
-        <h2 class="text-center font-semibold text-3xl text-white mt-5 ">
+        <h2 class="text-center font-semibold text-2xl font-serif lg:text-3xl text-white mt-5 ">
      
           SERVICES
-          <span ></span>
+         
         </h2>
         
         <div class="flex flex-col md:flex-row justify-center items-center mt-4 mx-auto">
@@ -229,21 +229,21 @@
       <p>"I am a Front End web Developer (MERN), concurrently finishing my Diploma in Computer Science. With a year of immersive web development experience, my goal is to reach a senior role in Frontend Web Development within two years. Committed to staying updated on emerging technologies, I ensure my knowledge remains cutting-edge in the dynamic field of web development."</p>
     </div>
 
-    <div class="flex flex-col lg:flex-row">
+    <div class="flex flex-col lg:flex-row text-gray-100">
       <img src="imgs/my-photo.jpeg" alt="Md Kawsar Alam" class="mx-auto w-48 h-48 lg:w-[250px] border border-[#0ef] shadow-2xl lg:h-auto my-6">
-      <div class=" m-2 md:m-5">
-        <h3 class="text-center font-serif  font-semibold  text-xl md:text-2xl text-white mb-4">FRONTEND WEB DEVELOPER (MERN STACK)</h3>
+      <div class=" m-2 md:m-5  ">
+        <h3 class="text-center  font-serif  font-semibold  text-xl md:text-2xl text-white mb-4">FRONTEND WEB DEVELOPER (MERN STACK)</h3>
         <p>I'm a MERN-stack web developer with skills in React, Express JS, Node Js, MongoDB, Javascript, HTML, CSS, TailwindCSS, Bootstrap 5, React Bootstrap, DaisyUI, Figma, API, REST API, GitHub, Git, Netlify, etc.</p>
-        <div class="grid grid-cols-1  md:grid-cols-2 mt-5">
-          <p>Name: MD kawsar alam</p>
-          <p>Age: 22 years</p>
-          <p>Height: 5.8`</p>
-          <p>Weight:63 kg</p>
-          <p>Birthday: 03-07-2001</p>
-          <p>Phone: +8801557132665</p>
-          <p>Email: mdkawsaralam537@gmail.com</p>
-          <p><a href="GitHub: www.github.com/mdkawsar-alam">GitHub: www.github.com/mdkawsar-alam</a></p>
-          <p><a href="www.linkedin.com/in/md-kawsar-alam997">Linkedin: md-kawsar-alam997</a> </p>
+        <div class="grid grid-cols-1   md:grid-cols-2 mt-5 text-left ">
+          <p><strong>Name</strong>: MD kawsar alam</p>
+          <p><strong>Age</strong>: 22 years</p>
+          <p><strong>Height</strong>: 5.8`</p>
+          <p><strong>Weight</strong>:63 kg</p>
+          <p><strong>Birthday</strong>: 03-07-2001</p>
+          <p><strong>Phone</strong>: +8801557132665</p>
+          <p><strong>Email</strong>: mdkawsaralam537@gmail.com</p>
+          <p><a href="GitHub: www.github.com/mdkawsar-alam"><strong>GitHub</strong>: www.github.com/mdkawsar-alam</a></p>
+          <p><a href="www.linkedin.com/in/md-kawsar-alam997"><strong>Linkedin</strong>: md-kawsar-alam997</a> </p>
         </div>
       </div>
     </div>
@@ -255,36 +255,47 @@
 </section>
 
 <!--  education section start here -->
-<section id="contact" class="mx-auto mb-5">
-  <h2 class="text-center font-semibold text-3xl text-white mt-5">CONTACT US</h2>
-  <form action="submit_form.php" method="post" class="max-w-md mx-auto">
+<section  id="contact" style="background-image: url(./imgs/contract-bg.jpg);" 
+class="mx-auto  bg-cover ">
+  <h2 class="text-center font-semibold text-2xl font-serif  lg:text-3xl text-white pt-5 ">CONTACT US</h2>
+ 
+ 
+   <form action="" method="" class=" max-w-72 md:max-w-xl mx-auto my-5">
     <div class="mb-4">
-      <label for="name" class="block text-sm font-medium text-gray-700">Name:</label>
-      <input type="text" id="name" name="name" required
-             class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500">
+    
+      <input type="text" id="name" name="name" required placeholder="your Name"
+             class="mt-1 p-4 px-[22px] w-full border border-[#0EF]   focus:outline-none focus:border-blue-500">
     </div>
 
     <div class="mb-4">
-      <label for="email" class="block text-sm font-medium text-gray-700">Email:</label>
-      <input type="email" id="email" name="email" required
-             class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500">
+     
+      <input type="email" id="email" name="email" required placeholder="Your email"
+             class="mt-1 p-4 px-[22px] w-full border border-[#0EF] focus:outline-none focus:border-blue-500">
+    </div>
+    <div class="mb-4">
+     
+      <input type="text" id="phone-number" name="phone-number"  required placeholder="Your phone Number"
+             class="mt-1 p-4  w-full border border-[#0ef]  focus:outline-none focus:border-blue-500">
     </div>
 
     <div class="mb-4">
-      <label for="message" class="block text-sm font-medium text-gray-700">Message:</label>
+      <label for="message" class="block text-sm font-medium text-gray-100">Message:</label>
       <textarea id="message" name="message" rows="4" required
-                class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500"></textarea>
+                class="mt-2 p-5  w-full border border-[#0ef] focus:outline-none  focus:border-blue-500"></textarea>
     </div>
 
-    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Submit</button>
+    <button type="submit" class="bg-[#0ef]  hover:bg-gray-900 transition-all 
+    ease-in-out duration-500 text-black hover:text-white px-4 py-2 rounded-md mb-4 ">Submit</button>
   </form>
+   
+ 
 </section>
 
 
     <section id="education" class="education-section">
       <div class=" mx-auto">
         <h2 class="text-center font-semibold text-2xl font-serif font md:text-3xl text-white mt-5">EDUCATION</h2>
-        <div class=" flex flex-col md:flex-row justify-center items-center mx-auto">
+        <div class=" flex flex-col md:flex-row justify-center items-center  mx-auto">
           
             <div class="card w-80 bg-[rgb(9,16,26)] -content border border-[#0ef] m-4 p-2">
               <div class="card-body ">
@@ -327,7 +338,8 @@
   <section id="skill" class="my-5 flex justify-center items-center mx-0">
     <div class=" mx-auto text-center mb-5">
           <h2 class="font-semibold text-3xl m-2 text-white">SKILL</h2>
-     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 mt-5 gap-2 md:gap-3  justify-items-center">
+     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 mt-5 gap-2 md:gap-3 
+      justify-items-center">
       <div class="box">
         <div class="shadow"></div>
         <div class="content">
@@ -359,6 +371,22 @@
           </div>
         </div>
       </div>
+      <div class="box">
+        <div class="shadow"></div>
+        <div class="content">
+          <div class="percent" data-text="SCSS" style="--num: 85">
+            <div class="dot"></div>
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+          </div>
+          <div class="number">
+            <h2>90<span>%</span></h2>
+          </div>
+        </div>
+      </div>
+    
     
       <div class="box">
         <div class="shadow"></div>
@@ -468,6 +496,22 @@
           </div>
         </div>
       </div>
+      <div class="box">
+        <div class="shadow"></div>
+        <div class="content">
+          <div class="percent" data-text="Github" style="--num: 80">
+            <div class="dot"></div>
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+          </div>
+          <div class="number">
+            <h2>90<span>%</span></h2>
+          </div>
+        </div>
+      </div>
+    
   
   
       <div class="box">
@@ -515,8 +559,6 @@
     </div>
   </section>
   <!--  subscribe section end here -->
-    
-
     </main>
 
 
@@ -524,56 +566,50 @@
 
 
 
-<footer class="transition-transform duration-500 ease-in-out transform translate-x-0 md:translate-x-0" id="footer">
-
- <div class="  block md:flex justify-center  md:justify-between items-top p-4 w-full">
-
-    <nav class=" flex text-center">
-    <div class="w-12 h-12  items-center hidden md:flex text-center justify-center
-   text-black text-lg bg-[#0ef] ml-3 mt-3 p-4 rounded-full">
-      <i class="fa-solid fa-location-dot"></i>
-    </div>
-    <div class=" m-3 p-2 md:text-left text-center ">
-      <h6 class="font-semibold text-white text-xl mb-4">Address</h6> 
-      <p> Khagrachari ,Chittogong, Bangladesh</p>
-     
-    </div>
-
-    </nav> 
-       <nav class=" block  text-center"  >
-      <h6 class=" font-semibold text-white text-xl mb-4 ">Lest talks us</h6> 
-      <p class="m-1">+8801557132665</p>
-      <p class="m-1">+8801780270537</p>
-     
-      </nav> 
-      <nav class=" relative  mx-auto m-10  text-center md:mb-0 mb-14 ">
-        <h6 class="font-semibold text-white text-xl">Social Media</h6>
-        <div class="media   top-20  right-30 md:right-20">
-         
-          <div class="toggle">
-            <input type="checkbox">
-            <span class="btn"></span>
-            <ul>
-              <li><a href="" class="text-white"><i class="fab fa-facebook"></i></a></li>
-              <li><a href="https://ww.github.com/mdkawsar-alam" class="text-white"><i class="fab fa-github"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/md-kawsar-alam-b7b9b3272" class="text-white"><i class="fab fa-linkedin"></i></a></li>
-              <li><a href="" class="text-white"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="md-kawsar-alam-b7b9b3272" class="text-white"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="" class="text-white"><i class="fa-brands fa-whatsapp"></i></a></li>
-            </ul>
+    <footer class="transition-transform duration-500 ease-in-out transform translate-x-0 md:translate-x-0 " id="footer">
+      <div class="block md:flex justify-center md:justify-between items-start p-5 md:p-16">
+    
+        <nav class="flex justify-center items-start text-center ">
+          <div class="w-12 h-12 items-start hidden md:flex text-center justify-center text-black text-lg bg-[#0ef] ml-3 mt-3 p-4 rounded-full">
+            <i class="fa-solid fa-location-dot"></i>
           </div>
-        </div>
-      </nav>
-      
+          <div class="m-3 p-2  text-center">
+            <h6 class="font-semibold text-white text-xl mb-2">Address</h6>
+            <p>Khagrachari, Chittagong, Bangladesh</p>
+          </div>
+        </nav>
+        <nav class="relative mx-auto  md:m-0 text-center">
+          <h6 class="font-semibold text-white text-xl mb-2">Social Media</h6>
+          <div class="media top-20 right-30 md:right-20">
+            <div class="toggle">
+              <input type="checkbox">
+              <span class="btn"></span>
+              <ul>
+                <li><a href="" class="text-white"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://ww.github.com/mdkawsar-alam" class="text-white"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/md-kawsar-alam-b7b9b3272" class="text-white"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="" class="text-white"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="md-kawsar-alam-b7b9b3272" class="text-white"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="" class="text-white"><i class="fa-brands fa-whatsapp"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    
+        <nav class="block text-center  pt-28 md:pt-0">
+          <h6 class="font-semibold text-white text-xl mb-2">Let's talk</h6>
+          <p class="m-1">+8801557132665</p>
+          <p class="m-1">+8801780270537</p>
+        </nav>
+    
        
-  </div>
-
-  
-
-<aside>
-    <p class=" text-center">Copyright © 2024 - All right reserved </p>
-  </aside>
-</footer>
+    
+      </div>
+    
+      <aside>
+        <p class="text-center">Copyright © 2024 - All right reserved</p>
+      </aside>
+    </footer>
 
 
 <script src="./script.js" defer></script>
