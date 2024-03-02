@@ -25,18 +25,21 @@
      <div class="magnifying-glass absolute w-8 h-8 border-2 border-gray-300 rounded-full adial
       bg-center pointer-events-none transition-transform duration-100"></div>
 
-      <header class=" w-screen sm:w-full bg-[#09101a] drop-shadow-2xl shadow-white text-white fixed top-0 z-50">
-        <div class="flex items-center justify-center relative h-16 w-full shadow-2xl md:p-5">
-            <div class="flex bg-[#141c27] h-16 items-center w-full md:w-[70%] justify-between pl-4 md:p-4 ">
-                <div class="">
+      <header class="w-screen mr-10 bg-[#09101a] drop-shadow-2xl shadow-white text-white fixed top-0 z-50">
+        <div class="flex items-center justify-center relative h-16 w-screen shadow-2xl lg:p-5">
+            <div class="flex bg-[#141c27] h-16 items-center w-screen lg:w-[75%] justify-between
+             pl-4 lg:p-4">
+                <div>
                     <a href="#" class="text-2xl sm:text-3xl font-bold font-serif">KAWSAR</a>
                 </div>
-                <nav id="navbar" class="block md:flex md:space-x-4 bg-[#0b101b]  md:bg-[#141c27] 
-                    transform -translate-x-full duration-1000 w-full md:w-auto md:-translate-x-0 top-12 md:top-5 right-0
-                     md:right-64 absolute p-10 mx-5 mt-4 md:m-0 md:p-0  ">
+                <nav id="navbar" class="block lg:flex lg:space-x-4
+                 bg-[#0b101b] lg:bg-[#141c27] transform -translate-x-full 
+                 duration-1000 w-screen lg:w-auto lg:-translate-x-0 top-12 lg:top-6 lg:right-64 
+                 absolute p-10  mt-4 lg:m-0 lg:p-0 ">
+                  
                    <a href="#"
             class="relative  group text-base transition duration-500 ease-in-out transform
-             hover:text-[#0ef]  block">
+             hover:text-[#0ef]  block m-3 lg:m-0">
             HOME
             <span
               class="absolute inset-0 z-[-1] border-b-2 border-solid border-blue-500 
@@ -47,7 +50,7 @@
           <a
             href="#about"
             class="relative group text-base transition duration-500 ease-in-out transform
-             hover:text-[#0ef] block">ABOUT ME
+             hover:text-[#0ef] block m-3 lg:m-0">ABOUT ME
             <span
               class="absolute inset-0 z-[-1] border-b-2 border-solid border-blue-500
                rounded-15 scale-0 translate-y-full opacity-0 transition-transform duration-500
@@ -57,7 +60,7 @@
           <a
             href="#"
             class="relative group text-base transition duration-500 ease-in-out transform
-             hover:text-[#0ef] block"
+             hover:text-[#0ef] block m-3 lg:m-0"
             >PROJECTS
             <span
               class="absolute inset-0 z-[-1] border-b-2 border-solid border-blue-500 
@@ -68,7 +71,7 @@
           <a
           href="#skill"
           class="relative group text-base transition duration-500 ease-in-out transform
-           hover:text-[#0ef] block"
+           hover:text-[#0ef] block m-3 lg:m-0"
           >SKILL
           <span
             class="absolute inset-0 z-[-1] border-b-2 border-solid border-blue-500 
@@ -80,7 +83,7 @@
         <a
             href="#education"
             class="relative group text-base transition duration-500 ease-in-out transform
-             hover:text-[#0ef] block"
+             hover:text-[#0ef] block m-3 lg:m-0"
             >EDUCATION
             <span
               class="absolute inset-0 z-[-1] border-b-2 border-solid border-blue-500 
@@ -91,7 +94,7 @@
           <a
           href="#services"
           class="relative group text-base transition duration-500 ease-in-out transform
-           hover:text-[#0ef] block"
+           hover:text-[#0ef] block m-3 lg:m-0"
           >SERVICES
           <span
             class="absolute inset-0 z-[-1] border-b-2 border-solid border-blue-500 
@@ -103,7 +106,7 @@
           <a
             href="#"
             class="relative group text-base transition duration-500 ease-in-out transform
-             hover:text-[#0ef]"
+             hover:text-[#0ef] block m-3 lg:m-0"
             >BLOG
             <span
               class="absolute inset-0 z-[-1] border-b-2 border-solid border-blue-500 
@@ -114,7 +117,7 @@
           <a
             href="#"
             class="relative group text-base transition duration-500 ease-in-out transform
-             hover:text-[#0ef] block"
+             hover:text-[#0ef] block m-3 lg:m-0"
           >
             CONTACT
             <span
@@ -124,17 +127,17 @@
             ></span
           ></a>
         </nav>
-        <div class="bg-[#0ef] text-center justify-center flex items-center p-8 w-[60px] h-full md:hidden">
-          <button id="hamburger-btn" class="text-3xl">
-            <i class="fa-solid fa-bars text-[#141227]"></i>
-          </button>
-          <button id="cross-btn" class="text-3xl" style="display: none;">
-            <i class="fa-solid fa-xmark text-[#141227]"></i>
-          </button>
+        <div class="bg-[#0ef] text-center justify-center flex items-center p-8 w-[60px] h-full lg:hidden">
+            <button id="hamburger-btn" class="text-3xl">
+                <i class="fa-solid fa-bars text-[#141227]"></i>
+            </button>
+            <button id="cross-btn" class="text-3xl" style="display: none;">
+                <i class="fa-solid fa-xmark text-[#141227]"></i>
+            </button>
         </div>
-      </div>
     </div>
-    </header>
+</div>
+</header>
   
 
     <main class="w-full transition-transform duration-500  ease-in-out transform translate-x-0 md:translate-x-0" id="main-content">
@@ -168,7 +171,7 @@
                     I ensure my knowledge remains cutting-edge in the dynamic field of web development."
                 </p>
                 <a href="" download="">
-                  <button class="bg-[#0ef] mt-4 text-black transition duration- ease-in-out
+                  <button class="bg-[#0ef] mt-4 text-black transition duration-500 ease-in-out
                    p-3 rounded-lg  hover:bg-[#09101a]  hover:text-white m-4">
                    Download CV 
                    <i class="fa-solid fa-download"></i>

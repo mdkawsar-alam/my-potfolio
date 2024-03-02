@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.getElementById('navbar');
 
     hamburgerBtn.addEventListener('click', function() {
-        if (window.innerWidth < 768) {
+        if (window.innerWidth < 1024) {
             navbar.classList.add('translate-x-0');
             hamburgerBtn.style.display = 'none';
             crossBtn.style.display = 'inline-block';
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     crossBtn.addEventListener('click', function() {
-        if (window.innerWidth < 768) {
+        if (window.innerWidth < 1024) {
             navbar.classList.remove('translate-x-0');
             hamburgerBtn.style.display = 'inline-block';
             crossBtn.style.display = 'none';
