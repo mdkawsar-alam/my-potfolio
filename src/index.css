@@ -85,7 +85,7 @@
 @media screen and (max-width: 768px) {
   @keyframes slide {
     33.3333333333% {
-      font-size: 1rem;
+      font-size: 1.3rem;
       color: #0ef;
       letter-spacing: 2px;
     }
