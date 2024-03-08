@@ -96,7 +96,6 @@
   }
 }
  
-/*  education section start here */
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
@@ -115,36 +114,27 @@
   }
 }
 
-.education-section .card-container {
+.education-section .cert-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.card {
+.cert {
   animation-duration: 1s;
   animation-fill-mode: both;
   flex: 1;
   margin: 0 10px;
-  max-width: calc(100% - 20px); /* Adjust as needed */
+  max-width: calc(100% - 20px); 
 }
 
-.card:nth-child(odd) {
+.cert:nth-child(odd) {
   animation-name: slideInFromLeft;
 }
 
-.card:nth-child(even) {
+.cert:nth-child(even) {
   animation-name: slideInFromRight;
 }
-
-@media (min-width: 768px) {
-  .card {
-    max-width: calc(50% - 20px); /* 50% width on screens larger than 768px */
-  }
-}
-
-
-/* education section end here */
 
 /*  skill section start here */
 

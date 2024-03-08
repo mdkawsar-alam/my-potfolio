@@ -1691,6 +1691,10 @@ html {
   margin: 1rem;
 }
 
+.m-6 {
+  margin: 1.5rem;
+}
+
 .mx-0 {
   margin-left: 0px;
   margin-right: 0px;
@@ -1791,6 +1795,10 @@ html {
   height: 4rem;
 }
 
+.h-44 {
+  height: 11rem;
+}
+
 .h-48 {
   height: 12rem;
 }
@@ -1801,6 +1809,14 @@ html {
 
 .h-full {
   height: 100%;
+}
+
+.h-52 {
+  height: 13rem;
+}
+
+.h-56 {
+  height: 14rem;
 }
 
 .w-12 {
@@ -1819,16 +1835,8 @@ html {
   width: 20rem;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
 .w-\[100\%\] {
   width: 100%;
-}
-
-.w-\[300px\] {
-  width: 300px;
 }
 
 .w-\[60px\] {
@@ -2052,6 +2060,10 @@ html {
   padding: 2rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -2111,10 +2123,6 @@ html {
   text-align: right;
 }
 
-.font-sans {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 .font-serif {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
@@ -2134,8 +2142,8 @@ html {
   line-height: 2.5rem;
 }
 
-.text-\[22px\] {
-  font-size: 22px;
+.text-\[28px\] {
+  font-size: 28px;
 }
 
 .text-base {
@@ -2156,10 +2164,6 @@ html {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[28px\] {
-  font-size: 28px;
 }
 
 .font-bold {
@@ -2203,11 +2207,6 @@ html {
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-
 .text-slate-50 {
   --tw-text-opacity: 1;
   color: rgb(248 250 252 / var(--tw-text-opacity));
@@ -2220,11 +2219,6 @@ html {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray-200 {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -2376,10 +2370,6 @@ html {
 }
 
 @media (min-width: 640px) {
-  .sm\:w-\[90\%\] {
-    width: 90%;
-  }
-
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -2427,12 +2417,24 @@ html {
     height: 5rem;
   }
 
+  .md\:w-96 {
+    width: 24rem;
+  }
+
+  .md\:w-\[300px\] {
+    width: 300px;
+  }
+
   .md\:w-\[400px\] {
     width: 400px;
   }
 
-  .md\:w-\[75\%\] {
-    width: 75%;
+  .md\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .md\:w-80 {
+    width: 20rem;
   }
 
   .md\:max-w-xl {
@@ -2472,6 +2474,11 @@ html {
     padding: 4rem;
   }
 
+  .md\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
   .md\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -2498,10 +2505,6 @@ html {
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-
-  .md\:text-\[32px\] {
-    font-size: 32px;
   }
 }
 
@@ -2534,6 +2537,14 @@ html {
     width: 250px;
   }
 
+  .lg\:w-\[300px\] {
+    width: 300px;
+  }
+
+  .lg\:w-\[500px\] {
+    width: 500px;
+  }
+
   .lg\:w-\[75\%\] {
     width: 75%;
   }
@@ -2542,9 +2553,21 @@ html {
     width: auto;
   }
 
+  .lg\:w-\[400px\] {
+    width: 400px;
+  }
+
+  .lg\:w-96 {
+    width: 24rem;
+  }
+
   .lg\:-translate-x-0 {
     --tw-translate-x: -0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
@@ -2574,9 +2597,22 @@ html {
     padding: 1.25rem;
   }
 
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .lg\:text-left {
+    text-align: left;
+  }
+
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .lg\:text-\[32px\] {
+    font-size: 32px;
   }
 }
   

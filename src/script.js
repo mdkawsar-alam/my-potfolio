@@ -30,4 +30,35 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 // service section 
-``
+document.addEventListener("DOMContentLoaded", function () {
+    // Get all the card elements
+    const cards = document.querySelectorAll('.cert');
+
+    // Options for the Intersection Observer
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5, // Adjust as needed based on when you want the animation to trigger
+    };
+
+    // Callback function to handle intersection changes
+    const handleIntersection = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Add a class to start the animation when the card comes into view
+          entry.target.classList.add('animate-in');
+        } else {
+          // Optionally, remove the class if you want to reset the animation when the card goes out of view
+          entry.target.classList.remove('animate-in');
+        }
+      });
+    };
+
+    // Create an Intersection Observer with the callback and options
+    const observer = new IntersectionObserver(handleIntersection, options);
+
+    // Observe each card element
+    cards.forEach((card) => {
+      observer.observe(card);
+    });
+  });
