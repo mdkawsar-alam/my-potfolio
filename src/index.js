@@ -1,3 +1,10 @@
+import banner from '@/assets/heroSection/banner.jpg'
+import me from '@/assets/heroSection/me.png'
+
+export const images={
+  me ,
+  banner
+}
 
 export const navItems = [
     { href: "#", label: "HOME" },
