@@ -58,7 +58,7 @@ const HeroSection = () => {
   return (
     <div className="bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${images.banner.src})` }}>
       <Container>
-      <div className="flex flex-col lg:flex-row items-center text-center pb-8 pt-24 lg:text-left px-5 md:px-14">
+      <div className="flex flex-col lg:flex-row items-center text-left pb-8 pt-24 lg:text-left px-5 md:px-14">
           <div className="w-full flex flex-col  lg:w-1/2  space-y-3 md:space-y-6">
             <h1 className="relative font-bold text-white uppercase text-[20px] lg:text-[28px] font-serif">
               HI I'M Kawsar!
