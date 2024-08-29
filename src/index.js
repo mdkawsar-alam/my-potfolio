@@ -1,9 +1,12 @@
 import banner from '@/assets/heroSection/banner.jpg'
 import me from '@/assets/heroSection/me.png'
-
+import nexti from "@/assets/blog/nextjs1.webp";
+import nodejs from "@/assets/blog/nodejs.webp";
+import redux from "@/assets/blog/redux.webp";
 export const images={
   me ,
-  banner
+  banner,
+  nexti, nodejs,redux
 }
 
 export const navItems = [
@@ -32,7 +35,7 @@ export const navItems = [
     {
       id: 1,
       image: '/path/to/image1.jpg',
-      placeholder: '/path/to/placeholder1.jpg', // Low-res or base64 string
+      placeholder: '/path/to/placeholder1.jpg', 
       title: 'Project One',
       description: 'This is a brief description of Project One.',
       link: 'https://example.com/project-one',
@@ -72,3 +75,58 @@ export const navItems = [
     { name: 'Next.js', percent: 85 },
     { name: 'TypeScript', percent: 70 },
   ];
+
+  export const testimonials = [
+    {
+      image: '/testimonial1.jpg',
+      name: 'John Doe',
+      title: 'Software Engineer',
+      quote: 'This product has been a game-changer for my team.',
+    },
+    {
+      image: '/testimonial1.jpg',
+      name: 'John Doe',
+      title: 'Software Engineer',
+      quote: 'This product has been a game-changer for my team.',
+    },
+    {
+      image: '/testimonial1.jpg',
+      name: 'John Doe',
+      title: 'Software Engineer',
+      quote: 'This product has been a game-changer for my team.',
+    },
+  ];
+ export const blogPosts = [
+   {
+     title: "The Importance of Redux in Web Development",
+     content:
+       "Redux is a predictable state container for JavaScript applications...",
+     date: "2023-12-25",
+     author: "Kawsar",
+     image: redux,
+   },
+   {
+     title: "Why Choose Next.js for Your Next Project",
+     content:
+       "Next.js is a full-stack React framework that simplifies the development...",
+     date: "2024-01-10",
+     author: " kawsar",
+     image: nexti,
+   },
+   {
+     title: "Why Node.js is the Right Choice for Your Backend",
+     content:
+       "Node.js is a JavaScript runtime environment that allows you to run JavaScript code...",
+     date: "2024-02-05",
+     author: "Michael Johnson",
+     image: nodejs,
+   },
+   {
+     title: "Why Node.js is the Right Choice for Your Backend",
+     content:
+       "Node.js is a JavaScript runtime environment that allows you to run JavaScript code...",
+     date: "2024-02-05",
+     author: "Michael Johnson",
+     image: nodejs,
+   },
+ ];

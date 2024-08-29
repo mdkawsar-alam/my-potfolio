@@ -14,13 +14,13 @@ const Footer = () => {
             <FaLocationDot />
           </div>
           <div className="m-3 p-2 text-center md:text-left">
-            <h6 className="font-semibold text-white text-xl mb-2">Address</h6>
-            <p>Khagrachari, Chittagong, Bangladesh</p>
+            <h6 className="font-semibold text-gray-100 text-xl mb-2">Address</h6>
+            <p className='text-gray-200'>Khagrachari, Chittagong, Bangladesh</p>
           </div>
-        </nav>
+        </nav>s
         
         <nav className="relative mx-auto md:m-0 text-center">
-          <h6 className="font-semibold text-white text-xl mb-2">Social Media</h6>
+          <h6 className="font-semibold text-gray-100 text-xl mb-2">Social Media</h6>
           <div className="relative inline-block text-center">
             <input type="checkbox" id="toggle" className="peer hidden" />
             <label htmlFor="toggle" className="block w-16 h-16 rounded-full bg-[#1DA2FF] cursor-pointer relative z-10 transition-transform duration-1000 ease-in-out transform">
@@ -36,7 +36,8 @@ const Footer = () => {
                     href={`https://${platform}.com/mdkawsar.ahamed.9083477`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center w-12 h-12 rounded-full bg-[#1DA2FF] text-white hover:bg-[#0ef] transition-colors"
+                    className="flex items-center justify-center w-12 h-12 rounded-full
+                     bg-[#1DA2FF] text-white hover:bg-[#0ef] transition-colors"
                   >
                     {platform === 'facebook' && <FaFacebook className="text-xl" />}
                     {platform === 'github' && <FaGithub className="text-xl" />}
@@ -52,15 +53,15 @@ const Footer = () => {
         </nav>
         
         <nav className="block text-center pt-28 md:pt-0">
-          <h6 className="font-semibold text-white text-xl mb-2">Let's talk</h6>
-          <p className="m-1">+8801557132665</p>
-          <p className="m-1">+8801780270537</p>
+          <h6 className="font-semibold text-gray-100 text-xl mb-2">Let's talk</h6>
+          <p className="m-1 text-gray-200">+8801557132665</p>
+          <p className="m-1 text-gray-200">+8801780270537</p>
         </nav>
         
       </div>
       
       <aside>
-        <p className="text-center text-white">Copyright © 2024 - All rights reserved</p>
+        <p className="text-center text-gray-200">Copyright © 2024 - All rights reserved</p>
       </aside>
     </footer>
   );

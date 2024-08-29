@@ -57,7 +57,8 @@ const SkillSection = () => {
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-[rgb(0,42,71)] to-[#001c2a] opacity-30 rounded-full"></div>
                   <div
-                    className={`relative flex flex-col items-center justify-center z-10 ${isVisible ? 'opacity-100' : 'opacity-0'} transition-opacity duration-1000`}
+                    className={`relative flex flex-col items-center justify-center
+                       z-10 ${isVisible ? 'opacity-100' : 'opacity-0'} transition-opacity duration-1000`}
                   >
                     <div className="relative w-24 h-24 flex items-center justify-center">
                       <svg className="w-full h-full transform -rotate-90">
@@ -91,7 +92,8 @@ const SkillSection = () => {
                         {/* Dot or additional content can go here */}
                       </div>
                     </div>
-                    <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
+                    <div className="absolute inset-0 flex flex-col items-center justify-center 
+                    text-center text-white">
                       <h2 className="text-2xl font-semibold">
                         {isVisible ? skill.percent : '0'}
                         <span>%</span>
