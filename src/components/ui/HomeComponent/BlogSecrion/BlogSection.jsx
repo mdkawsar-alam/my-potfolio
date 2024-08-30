@@ -21,7 +21,7 @@ export default function Blogs() {
     return (
       <div className=" bg-[#09101A] ">
         <Container>
-          <h1 className="text-3xl font-bold mb-4 text-gray-50">My Blog</h1>
+          <h1 className="text-3xl text-center font-bold mb-4 text-gray-50">My Blog</h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             {blogPosts.map((post, index) => (
               <BlogPost  key={index} {...post} />

@@ -1,10 +1,14 @@
 import banner from '@/assets/heroSection/banner.jpg'
-import me from '@/assets/heroSection/me.png'
+import me from '@/assets/heroSection/me.png';
+import me2 from "@/assets/aboutme/me2.JPG";
 import nexti from "@/assets/blog/nextjs1.webp";
 import nodejs from "@/assets/blog/nodejs.webp";
 import redux from "@/assets/blog/redux.webp";
+import p1 from "@/assets/testmonial/p1.jpg";
+
 export const images={
-  me ,
+  me,
+  me2,
   banner,
   nexti, nodejs,redux
 }
@@ -22,14 +26,23 @@ export const navItems = [
 
   export const services = [
     {
-      title: 'WEB DESIGN',
-      description: 'My web design service encompasses crafting visually appealing and user-friendly interfaces. My focus is on creating designs that reflect your brand identity and enhance user engagement.',
+      title: "FULL-STACK WEB DEVELOPMENT",
+      description:
+        "As a MERN stack web developer, I offer full-stack development services, building robust and scalable web applications. My expertise includes using MongoDB, Express.js, React, and Node.js to create high-performance and dynamic web solutions that meet your business needs.",
     },
     {
-      title: 'WEB DEVELOPMENT',
-      description: 'With my web development service, we bring your vision to life by building robust and scalable web applications. Using the latest technologies and best practices, I ensure high performance and functionality.',
+      title: "CUSTOM WEB APPLICATIONS",
+      description:
+        "I specialize in creating custom web applications tailored to your specific requirements. From front-end interfaces to back-end APIs, I ensure seamless integration and a smooth user experience. My focus is on delivering secure, efficient, and maintainable applications.",
     },
+    {
+      title: "RESPONSIVE WEB DESIGN",
+      description:
+        "My responsive web design service ensures that your website looks great and functions well on all devices, from desktops to smartphones. I prioritize user-friendly design and intuitive navigation to enhance user engagement and satisfaction.",
+    },
+   
   ];
+
 
   export const projects = [
     {
@@ -78,19 +91,19 @@ export const navItems = [
 
   export const testimonials = [
     {
-      image: '/testimonial1.jpg',
+      image: p1,
       name: 'John Doe',
       title: 'Software Engineer',
       quote: 'This product has been a game-changer for my team.',
     },
     {
-      image: '/testimonial1.jpg',
+      image: p1,
       name: 'John Doe',
       title: 'Software Engineer',
       quote: 'This product has been a game-changer for my team.',
     },
     {
-      image: '/testimonial1.jpg',
+      image: p1,
       name: 'John Doe',
       title: 'Software Engineer',
       quote: 'This product has been a game-changer for my team.',

@@ -1,4 +1,5 @@
 import Container from '@/components/sheard/Contatiner/Container';
+import { images } from '@/index';
 import Image from 'next/image';
 
 const AboutMe = () => {
@@ -13,11 +14,11 @@ const AboutMe = () => {
 
           <div className="flex flex-col lg:flex-row items-center text-gray-100 mt-6">
             <Image
-              src="/imgs/my-photo.jpeg"
+              src={images.me2}
               alt="Md Kawsar Alam"
               width={250}
               height={250}
-              className="w-48 h-48 lg:w-[250px] lg:h-[250px] shadow-2xl my-6"
+              className=" my-6"
             />
             <div className="lg:ml-5 text-center lg:text-left">
               <h3 className="font-serif font-semibold text-xl md:text-2xl text-white mb-4">
