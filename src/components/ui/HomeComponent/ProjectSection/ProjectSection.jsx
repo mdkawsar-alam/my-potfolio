@@ -19,15 +19,17 @@ const Projects = () => {
                 className="bg-[#1B2A40] shadow-md rounded-md cursor-pointer"
                 onClick={() => window.open(project.link, "_blank")}
               >
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  width={400}
-                  height={200}
-                  className="rounded-t-md"
-                  placeholder="blur"
-                  blurDataURL={project.placeholder}
-                />
+                <a href={project.link} target="_blank" >
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    width={400}
+                    height={200}
+                    className="rounded-t-md"
+                    placeholder="blur"
+                    blurDataURL={project.placeholder}
+                  />
+                </a>
 
                 <div className="p-5">
                   <h3 className="text-white font-bold">{project.title}</h3>
