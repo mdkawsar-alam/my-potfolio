@@ -39,7 +39,7 @@ const ContactUs = () => {
       style={{ backgroundImage: 'url(/imgs/contract-bg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
       <Container>
-        <h2 className="text-center text-2xl lg:text-3xl font-semibold text-white mb-8">
+        <h2 className="text-center text-2xl lg:text-3xl font-semibold text-gray-50 mb-8">
           CONTACT US
         </h2>
         <form onSubmit={handleSubmit(onSubmit)} className="max-w-xl mx-auto bg-[#132031] bg-opacity-80 p-5 rounded-md shadow-lg">

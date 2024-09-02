@@ -17,7 +17,7 @@ const Footer = () => {
             <h6 className="font-semibold text-gray-100 text-xl mb-2">Address</h6>
             <p className='text-gray-200'>Khagrachari, Chittagong, Bangladesh</p>
           </div>
-        </nav>s
+        </nav>
         
         <nav className="relative mx-auto md:m-0 text-center">
           <h6 className="font-semibold text-gray-100 text-xl mb-2">Social Media</h6>

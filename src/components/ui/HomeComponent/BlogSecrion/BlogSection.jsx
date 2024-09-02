@@ -1,17 +1,23 @@
 
 import Container from '@/components/sheard/Contatiner/Container';
-import { blogPosts } from '@/index';
+import { blogPosts, projects } from '@/index';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function BlogPost({ title, date, author, content, image }) {
   return (
     <div className="p-4 bg-[#1B2A40]  rounded-lg shadow-md">
-      <Image src={image} alt={title} className="  rounded-lg mb-4" />
+      <Link href={`/blog/${projects.id}`}>
+        <Image src={image} alt={title} className="  rounded-lg mb-4" />
+      </Link>
       <h2 className="text-lg font-bold mb-2 text-gray-100">{title}</h2>
       <p className=" mb-4 text-sm text-gray-300">
         {date} by {author}
       </p>
-      <div className='text-gray-200 text-base' dangerouslySetInnerHTML={{ __html: content }} />
+      <div
+        className="text-gray-200 text-base"
+        dangerouslySetInnerHTML={{ __html: content }}
+      />
     </div>
   );
 }

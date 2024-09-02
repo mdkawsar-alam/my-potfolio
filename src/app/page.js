@@ -7,21 +7,22 @@ import Projects from "@/components/ui/HomeComponent/ProjectSection/ProjectSectio
 import Services from "@/components/ui/HomeComponent/ServiceSection/ServiceSection";
 import SkillSection from "@/components/ui/HomeComponent/SkillSection/SkillSection";
 import Testimonial from "@/components/ui/HomeComponent/TestimonialSection/TestimonialSection";
+import WorkExperience from "@/components/ui/HomeComponent/WorkExperience/WorkExperience";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div>
-      <HeroSection/>
-      <Projects/>
-      <Services/>
-      <EducationSection/>
-      <SkillSection/>
-      <Blogs/>
-      <Testimonial/>
-      
-      <AboutMe/>
-      <ContactUs/>
+      <HeroSection />
+      <Services />
+      <WorkExperience />
+      <Projects />
+      <SkillSection />
+      <EducationSection />
+      <Blogs />
+      <Testimonial />
+      <AboutMe />
+      <ContactUs />
     </div>
   );
 }
