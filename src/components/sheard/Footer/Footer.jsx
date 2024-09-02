@@ -53,7 +53,7 @@ const Footer = () => {
         </nav>
         
         <nav className="block text-center pt-28 md:pt-0">
-          <h6 className="font-semibold text-gray-100 text-xl mb-2">Let's talk</h6>
+          <h6 className="font-semibold text-gray-100 text-xl mb-2">{`Let's talk`}</h6>
           <p className="m-1 text-gray-200">+8801557132665</p>
           <p className="m-1 text-gray-200">+8801780270537</p>
         </nav>
@@ -61,7 +61,7 @@ const Footer = () => {
       </div>
       
       <aside>
-        <p className="text-center text-gray-200">Copyright © 2024 - All rights reserved</p>
+        <p className="text-center text-gray-200">{`Copyright © 2024 - All rights reserved`}</p>
       </aside>
     </footer>
   );

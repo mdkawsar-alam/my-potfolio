@@ -11,14 +11,14 @@ const AboutMe = () => {
             About Me
           </h2>
           <p className="p-4 text-center text-gray-300">
-            "I am a passionate Front End Developer specializing in the MERN
-            stack. Currently, I'm pursuing a Diploma in Computer Science to
-            enhance my technical expertise. Over the past year, I have immersed
-            myself in web development, building robust and user-friendly
-            applications. My objective is to achieve a senior role in Frontend
-            Development within the next two years, continuously learning and
-            adapting to new technologies to stay ahead in the ever-evolving
-            field of web development."
+        {`I am a passionate Front End Developer specializing in the MERN
+          stack. Currently, I'm pursuing a Diploma in Computer Science to
+          enhance my technical expertise. Over the past year, I have immersed
+          myself in web development, building robust and user-friendly
+          applications. My objective is to achieve a senior role in Frontend
+          Development within the next two years, continuously learning and
+          adapting to new technologies to stay ahead in the ever-evolving
+          field of web development.`}
           </p>
 
           <div className="flex flex-col lg:flex-row items-center text-gray-100 mt-6">
@@ -79,9 +79,9 @@ const AboutMe = () => {
           </div>
 
           <p className="text-center text-gray-300 mt-5">
-            "Adaptable and driven, I thrive in environments that challenge me to
+          Adaptable and driven, I thrive in environments that challenge me to
             grow. My goal is to leverage my skills to contribute to innovative
-            projects and continuously evolve as a developer."
+            projects and continuously evolve as a developer.
           </p>
         </div>
       </Container>
