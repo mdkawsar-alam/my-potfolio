@@ -1,5 +1,5 @@
 import AboutMe from "@/components/ui/HomeComponent/AboutMe/AboutMe";
-import Blogs from "@/components/ui/HomeComponent/BlogSecrion/BlogSection";
+import Blogs from "@/components/ui/blogComponents/BlogSecrion/BlogSection";
 import ContactUs from "@/components/ui/HomeComponent/ContractUs/ContractUs";
 import EducationSection from "@/components/ui/HomeComponent/EducationSection/EducationSection";
 import HeroSection from "@/components/ui/HomeComponent/HeroSection/HeroSection";
@@ -19,7 +19,7 @@ export default function Home() {
       <Projects />
       <SkillSection />
       <EducationSection />
-      <Blogs />
+    
       <Testimonial />
       <AboutMe />
       <ContactUs />

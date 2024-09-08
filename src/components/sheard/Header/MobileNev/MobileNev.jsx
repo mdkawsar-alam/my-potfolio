@@ -1,3 +1,4 @@
+import { navItems } from "@/index";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
@@ -37,7 +38,7 @@ const MobileNav = () => {
     };
   }, [isMenuOpen]);
 
-  const navItems = ["HOME", "ABOUT ME", "PROJECTS", "SKILL", "BLOG", "CONTACT"];
+  
 
   return (
     <>
@@ -62,14 +63,14 @@ const MobileNav = () => {
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        {navItems.map((item) => (
+        {navItems.map((item,i) => (
           <Link
-            key={item}
-            href={`#${item.toLowerCase().replace(" ", "-")}`}
+            key={i}
+            href={item.path}
             className="block my-3 text-base text-white relative overflow-hidden group"
-            onClick={() => setIsMenuOpen(false)} // Close menu when a link is clicked
+            onClick={() => setIsMenuOpen(false)} 
           >
-            {item}
+            {item.name}
             <span className="absolute left-0 bottom-0 h-0.5 w-full bg-[#0ef] transition-transform duration-300 transform scale-x-0 group-hover:scale-x-100"></span>
           </Link>
         ))}

@@ -14,17 +14,38 @@ export const images={
   nexti, nodejs, redux,
  
 }
-
 export const navItems = [
-    { href: "#", label: "HOME" },
-    { href: "#about", label: "ABOUT ME" },
-    { href: "#", label: "PROJECTS" },
-    { href: "#skill", label: "SKILL" },
-    { href: "#education", label: "EDUCATION" },
-    { href: "#services", label: "SERVICES" },
-    { href: "#", label: "BLOG" },
-    { href: "#contract", label: "CONTACT" },
-  ];
+  {
+    id: 1,
+    path: "/",
+    name: "Home",
+  },
+  {
+    id: 2,
+    path: "/about",
+    name: "About Me",
+  },
+  {
+    id: 3,
+    path: "/projects",
+    name: "Projects",
+  },
+  {
+    id: 4,
+    path: "/skill",
+    name: "Skill",
+  },
+  {
+    id: 5,
+    path: "/blog",
+    name: "Blog",
+  },
+  {
+    id: 6,
+    path: "/contact",
+    name: "Contact",
+  },
+];
 
   export const services = [
     {
@@ -114,6 +135,7 @@ export const navItems = [
 export const blogPosts = [
   {
     id: 1,
+    category: "Programing",
     title: "Understanding Redux in Modern Web Apps",
     content: "Redux provides a predictable state management solution...",
     fullDescription: `
@@ -130,6 +152,7 @@ export const blogPosts = [
   },
   {
     id: 2,
+    category: "Programing",
     title: "Next.js: The Ultimate Framework for React Developers",
     content: "Next.js simplifies full-stack development with React...",
     fullDescription: `
@@ -147,6 +170,7 @@ export const blogPosts = [
   },
   {
     id: 3,
+    category: "Programing",
     title: "Node.js: The Best Choice for Scalable Backends",
     content:
       "Node.js offers a powerful runtime for JavaScript on the server...",
@@ -165,6 +189,7 @@ export const blogPosts = [
   },
   {
     id: 4,
+    category: "Programing",
     title: "Node.js: The Best Choice for Scalable Backends",
     content:
       "Node.js offers a powerful runtime for JavaScript on the server...",
