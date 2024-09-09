@@ -4,14 +4,14 @@ import Image from "next/image";
 
 const AboutMe = () => {
   return (
-    <section className="bg-[#09101a] py-10">
+    <section className="bg-[#09101a] py-11">
       <Container>
-        <div className="flex flex-col items-center px-4 md:p-10">
+        <div className="flex flex-col items-center px-4 ">
           <h2 className="text-2xl lg:text-3xl font-semibold text-white text-center">
             About Me
           </h2>
           <p className="p-4 text-center text-gray-300">
-        {`I am a passionate Front End Developer specializing in the MERN
+            {`I am a passionate Front End Developer specializing in the MERN
           stack. Currently, I'm pursuing a Diploma in Computer Science to
           enhance my technical expertise. Over the past year, I have immersed
           myself in web development, building robust and user-friendly
@@ -75,14 +75,13 @@ const AboutMe = () => {
                   </a>
                 </p>
               </div>
+              <p className="text-center text-gray-300 mt-5">
+                Adaptable and driven, I thrive in environments that challenge me
+                to grow. My goal is to leverage my skills to contribute to
+                innovative projects and continuously evolve as a developer.
+              </p>
             </div>
           </div>
-
-          <p className="text-center text-gray-300 mt-5">
-          Adaptable and driven, I thrive in environments that challenge me to
-            grow. My goal is to leverage my skills to contribute to innovative
-            projects and continuously evolve as a developer.
-          </p>
         </div>
       </Container>
     </section>

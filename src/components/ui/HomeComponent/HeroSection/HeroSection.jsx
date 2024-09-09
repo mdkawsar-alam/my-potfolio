@@ -87,7 +87,7 @@ const HeroSection = () => {
                   knowledge remains cutting-edge in the dynamic field of web
                   development.
                 </p>
-                <div className="flex justify-center mt-4 md:mt-0">
+                <div className="flex justify-center pt-8 md:mt-0">
                   <Button onClick={downloadResume}>
                     Download Resume
                     <MdOutlineFileDownload />

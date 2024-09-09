@@ -14,12 +14,14 @@ export default function BlogPostPage({ params }) {
   if (!post) return <div>Loading...</div>; 
 
   return (
-    <div className="bg-[#09101A] pt-24">
+    <div className="bg-[#09101A]">
       <Container>
-        <div className=" p-8 space-y-11 ">
-          <h1 className="text-3xl font-semibold text-gray-50 text-center">{post.title}</h1>
+        <div className=" pt-24 px-4 space-y-11 ">
+          <h1 className="text-xl md:text-3xl font-semibold text-gray-50 text-center">
+            {post.title}
+          </h1>
 
-          <div className=" w-[500px] mx-auto">
+          <div className="w-[350px] md:w-[500px] mx-auto">
             <Image
               src={post.image}
               alt={post.title}
@@ -28,10 +30,10 @@ export default function BlogPostPage({ params }) {
             />
           </div>
           <div
-            className="text-gray-200 leading-7 tracking-normal text-base mt-4 "
+            className="text-gray-200 leading-7 -tracking-normal text-center text-sm md:text-base mt-4 "
             dangerouslySetInnerHTML={{ __html: post.fullDescription }}
           />
-          <p className="text-xs pt-5 text-gray-300">
+          <p className="text-xs pt-2 text-gray-300">
             {post.date} by {post.author}
           </p>
         </div>

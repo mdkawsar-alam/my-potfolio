@@ -42,8 +42,8 @@ export const navItems = [
   },
   {
     id: 6,
-    path: "/contact",
-    name: "Contact",
+    path: "/contract",
+    name: "Contract",
   },
 ];
 

@@ -6,8 +6,9 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="transition-transform duration-500 ease-in-out transform translate-x-0 md:translate-x-0 bg-[#09101A] py-16" id="footer">
-      <div className="block md:flex justify-center md:justify-between items-start p-5 md:p-16">
+    <footer className="transition-transform duration-500 ease-in-out transform 
+    translate-x-0 md:translate-x-0 bg-[#09101A] py-11" id="footer">
+      <div className="block md:flex justify-center md:justify-between items-start p-5 md:p-10">
         
         <nav className="flex justify-center items-start text-center">
           <div className="w-12 h-12 items-start hidden md:flex text-center justify-center text-black text-lg bg-[#0ef] ml-3 mt-3 p-4 rounded-full">
